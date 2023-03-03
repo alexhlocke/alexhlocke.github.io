@@ -9,6 +9,8 @@ url: # (optional) https://example.com, defaults to http://localhost:4000 in deve
 
 permalink: date # how your URLs are built, see https://jekyllrb.com/docs/permalinks/#builtinpermalinkstyles
 
+destination: _site
+
 # timezone: America/Los_Angeles # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # theme: minima 
