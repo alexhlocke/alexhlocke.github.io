@@ -34,3 +34,17 @@ img {
     width: 400em;
     max-width: 90%;
 }
+
+.icon_button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url();
+    /* background-size: cover; */
+}
+
+.icon_button:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
