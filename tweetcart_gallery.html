@@ -9,13 +9,90 @@
 </head>
 
 <body>
-    <h1>TweetCart Gallery</h1>
-    <p>Tweetcarts are a sort of challenge within the Pico-8 communicty to try and fit 
+    <!-- <h1><span class="col8">T</span><span class="col9">W</span><span class="col11">E</span><span class="col12">E</span><span class="col14">T</span><span class="col1">Cart</span>
+        Gallery        
+    </h1> -->
+    <h1><span class="col12">Tweet</span><span class="col1">Cart</span>
+        Gallery        
+    </h1>
+    <p style="font-style: italic;">Tweetcarts are a sort of challenge within the Pico-8 communicty to try and fit 
         an entire program (cartridge) inside of a 280 character tweet.
         The program could be anything, but typically people try to make an animation or just something that looks interesting. 
         Because of the strict character limits, you really have to get creative with condensing your code, and as a result,
         programs can be pretty tough to read sometimes. Nonetheless, its a fun challenge and you can do some pretty cool things with 
         just 280 characters of LUA!</p>
-    <p>All of the tweetcarts you see here are my own!</p>
+    <p style="font-style: italic;">All of the tweetcarts you see here are my own!</p>
 </body>
+
+
+<!-------------------------- Tweetcart exhibits --------------------------->
+<div class="container">
+    <div>
+        <img src='assets/tweetcart/gifs/spiral.gif'></img>
+    </div>
+    <div class="code-container">
+        <h2>Spiral</h2>
+        <h2 class="char">269 chars</h2>
+        <p class="code">
+            p={}f=0cls(1)
+            ::_::
+            for i=1,6000do
+                pset(rnd(128),rnd(128),1)
+            end
+            add(p,{x=64+20*cos(f/50),y=64+20*sin(f/50)
+                ,g=sin(f/50)+rnd()-.5,v=cos(f/50)+rnd()-.5})
+            f+=1
+            for i=1,#p do
+                d=p[i]if(i>1)line(d.x,d.y,p[i-1].x,p[i-1].y,10)
+                d.x+=d.v d.y+=d.g
+            end
+            flip()
+            goto _
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="code-container">
+        <h2>Collumn</h2>
+        <h2 class="char">268 chars</h2>
+        <p class="code">
+            ●={}😐=rnd
+            pal({-15,-4,12,8,-8},1)
+            for i=1,80do
+            add(●,{x,y=😐(128),r=😐(6),f,s=😐(.5)+.06,
+            l=😐(40)+10,c=😐(4)+2,b=1})end
+            ::_::cls()for c in all(●)
+            do c.x=64+c.l*sin(t()*c.s)
+            c.f=c.r*abs(cos(t()/2*c.s))+1  
+            circfill(c.x,c.y,c.f+1,c.b)
+            circfill(c.x,c.y,c.f,c.c)end
+            flip()goto _
+        </p>
+    </div>
+    <div>
+        <img src='assets\tweetcart\gifs\collumn_twcrt_0.gif'></img>
+    </div>
+</div>
+
+<div class="container">
+    <div>
+        <img src='assets/tweetcart/gifs/ripple_0.gif'></img>
+    </div>
+    <div class="code-container">
+        <h2>Ripple</h2>
+        <h2 class="char">279 chars</h2>
+        <p class="code">
+            f=0s=.5c={}l=line for i=3,128,6do
+            add(c,i)pal({-15,-5,11},1)end::_::if(abs(f)>38)s*=-1
+            f-=s
+            cls(1)for i=1,20do
+            y=f*sin(t()/4+i/30)v=64+1.5*y
+            y+=64u=f*sin(t()/4+(i+1)/30)j=64+1.5*u
+            u+=64l(c[i],y,c[i],v,3)l(c[i],y,c[i+1],j,3)l(c[i],v,c[i+1],j,2)l(c[i],y,c[i+1],u,2)end
+            flip()goto _
+        </p>
+    </div>
+</div>
+
 </html>

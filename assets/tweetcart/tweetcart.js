@@ -1,0 +1,27 @@
+
+var tweetCartInfo = {
+    [0]:  {title:"Spiral",
+        chars:269,
+        image:"assets\tweetcart\gifs\spiral.gif",
+        code:"assets\tweetcart\code\spiral.txt"},
+    [1]:  {title:"",
+        chars:0,
+        image:"assets\tweetcart\gifs\spiral.gif",
+        code:"assets\tweetcart\code\spiral.txt"},
+    [2]:  {title:"",
+        chars:0,
+        image:"",
+        code:""},
+    [3]:  {title:"",
+        chars:0,
+        image:"",
+        code:""},
+    [4]:  {title:"",
+        chars:0,
+        image:"",
+        code:""},
+    [5]:  {title:"",
+        chars:0,
+        image:"",
+        code:""}
+};
