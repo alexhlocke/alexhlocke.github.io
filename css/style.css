@@ -26,6 +26,10 @@ h2 {
     margin-top: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 p {
     margin: 2em 0;
 }
@@ -39,7 +43,8 @@ img {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-image: url();
+    border: white;
+    padding: 12px 12px;
     /* background-size: cover; */
 }
 
@@ -47,4 +52,5 @@ img {
     transform: scale(1.2);
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
+    color:yellow
 }

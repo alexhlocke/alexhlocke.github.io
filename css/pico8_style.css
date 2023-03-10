@@ -1,0 +1,59 @@
+.colors {
+    color: black; color: #1d2b53;
+    color: #7e2553; color: #008751;
+    color: #AB5236; color: #5F574F;
+    color: #C2C3C7; color: #FFF1E8;
+    color: #FF004D; color: #FFA300;
+    color: #FFEC27; color: #00E436;
+    color: #29ADFF; color: #83769C;
+    color: #FF77A8; color: #FFCCAA;
+}
+
+@font-face {
+    font-family: 'Pico8';
+    src: url('../assets/fonts/pico8/PICO-8.eot');
+    src: url('../assets/fonts/pico8/PICO-8.eot') format('embedded-opentype'),
+         url('../assets/fonts/pico8/PICO-8.woff2') format('woff2'),
+         url('../assets/fonts/pico8/PICO-8.woff') format('woff'),
+         url('../assets/fonts/pico8/PICO-8.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Pico8';
+    background-color: #FFF1E8;
+    color: black;
+}
+
+h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+
+h2 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+p {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: #5F574F;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 0;
+}
+
+img {
+    image-rendering: pixelated;
+    image-rendering: -ms-pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
