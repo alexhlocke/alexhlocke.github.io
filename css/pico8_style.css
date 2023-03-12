@@ -105,3 +105,32 @@ img {
     font-size: 15px;
     font-style: italic;
 }
+
+.floating-btn {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#FF004D;
+    color:#FFF1E8;
+    border-radius:50px;
+    text-align:center;
+    margin: auto;
+    font-size: 10px;
+    box-shadow: 2px 2px 3px #7e2553;
+}
+
+.floating-btn.home {
+    bottom:40px;
+    background-color:#FF004D;
+    color:#FFF1E8;
+    box-shadow: 2px 2px 3px #7e2553;
+}
+
+.floating-btn.about {
+    bottom:120px;
+    background-color:#FF004D;
+    color:#FFF1E8;
+    box-shadow: 2px 2px 3px #7e2553;
+}

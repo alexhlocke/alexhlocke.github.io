@@ -10,11 +10,11 @@ body {
 }
 
 h1 {
-    padding-top: 2em;
+    padding-top: 50px;
     text-align: center;
     font-size: 70px;
-    margin-bottom: 0;
     font-style: bold;
+    margin: auto;
 }
 
 h2 {
@@ -37,6 +37,10 @@ p {
 img {
     width: 400em;
     max-width: 90%;
+}
+
+hr {
+    width: 60%;
 }
 
 .icon_button {
