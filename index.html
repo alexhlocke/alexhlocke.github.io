@@ -1,36 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-widtch, initial-scale=1.0">
-    <title>Alex Locke's Site</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/sierpinski_0.png">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Alex Locke</title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div>
-        <h1>Alex Locke</h1>
-        <h2>(WEBSITE UNDER CONSTRUCTION)</h2>
-        <hr>
-        <div>
-            <button class="icon-button">
-                <img src="assets\icons\github.png" alt="Photo icon" onclick="window.open('https://github.com/alexhlocke', '_blank')" rel="noopener noreferrer">
-            </button>
-            <button class="icon-button">
-                <img src="assets\icons\linkedin.png" alt="Photo icon" onclick="window.open('https://www.linkedin.com/in/alexander-locke-795285192/', '_blank')" rel="noopener noreferrer">
-            </button>
-            <button class="icon-button">
-                <img src="assets\icons\itch.png" alt="Photo icon" onclick="window.open('https://alexhlocke.itch.io/', '_blank')" rel="noopener noreferrer">
-            </button>
+<body id="body">
+  <div class="pageContainer">
+    <script src="js/loadPartials.js"></script>
+    <div id="sidebar" class="sidebar"></div>
+  
+    <div class="content">
+    
+      <div class="post">
+        <a href="blog.html">
+          <div class=postImgContainer>
+            <img src="img/games/sprout_4.png" alt="sprout" class="postImg">
+            <div class="postImgCaption">Sprout</div>
+          </div>
+        </a>
+        
+        <div class="tagContainer">
+          <p class="tag">Playable In-Browser</p>
+          <p class="tag">Pico-8</p>
+          <p class="tag">Jam</p>
+          <p class="tag award">Jame Gam #29 Winner</p>
         </div>
-        <hr>
-        <h3>Projects</h3>
-        <div>
-            <button onclick="window.location.href='html/astrotype.html'">Try one of my games in your browser</button>
-            <button onclick="window.location.href='html/tweetcart_gallery.html'">Tweetcart Gallery</button>
+
+        <div class="postTextContainer"> 
+          <p class="postText">A short 2D platformer made completely from scratch in 72 hours in the Pico-8 game engine</p>
+          <!-- <p class="postText">Sprout is a game I made in 72 hours for the "Jame Gam #29" game jam. The game won 1st place overall based on player ratings out of 131 entries. It also scored #1 in gameplay and #2 in audio design across all entries. Everything in this game was made by me in the Pico-8 engine, including all audio assets, sprites, levels, and code. This was the first platformer I ever created in the engine, and creating my player controller and physics from the ground up taught me a lot about what aspects help and hinder player enjoyment in a game of this genre</p> -->
+
         </div>
+
+        <a href="/games.html" class="postMore">More Information ></a>
+
+        <hr>
+      </div>
+
+      <div class="post">
+        <div class=postImgContainer>
+          <img src="img/games/astrotype_1.png" alt="astrotype" class="postImg">
+          <div class="postImgCaption">Astrotype</div>
+        </div>
+        <div class="tagContainer">
+          <p class="tag">Playable In-Browser</p>
+          <p class="tag">Pico-8</p>
+          <p class="tag">Jam</p>
+        </div>
+        <div class="postTextContainer"> 
+          <p class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="postText">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class=postImgContainer>
+          <img src="img/games/going_swimmingly_6.png" alt="going swimmingly" class="postImg">
+          <div class="postImgCaption">Going Swimmingly</div>
+        </div>
+        <div class="tagContainer">
+          <p class="tag">Pico-8</p>
+          <p class="tag">WIP</p>
+        </div>
+      </div>
+
+      <footer id=footer></footer>
     </div>
+    
+  </div>
 </body>
+
 </html>
