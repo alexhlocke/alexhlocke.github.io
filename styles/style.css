@@ -12,7 +12,7 @@
 html {
   height: 100%;
   width: 100%;
-  background-color: var(--color-dark);
+  /* background-color: var(--color-dark); */
   color: var(--color-light);
 }
 
@@ -308,8 +308,15 @@ a.postMore {
   font-style: italic;
 }
 
+#reviewBody {
+  background-color: white;
+}
+
 #reviewIconDiv {
+  /* margin-top: 1vh; */
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -321,7 +328,22 @@ a.postMore {
   width: 50%;
 }
 
+.reviewA {
+  color: black;
+}
+
 #reviewText {
   height: 70vh;
   width: 90vh;
+  color: black;
+}
+
+.reviewH3 {
+  color: black;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.reviewHr {
+  border-top: 1px solid gray;
 }
