@@ -3,6 +3,8 @@
   --color-light: #fefffb;
   --color-lesslight: #c3c1c1;
   --color-red: #ff2961;
+
+  --color-appleblue: #1066f3;
 }
 
 * {
@@ -312,8 +314,7 @@ a.postMore {
   background-color: white;
 }
 
-#reviewIconDiv {
-  /* margin-top: 1vh; */
+/* #reviewIconDiv {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,7 +330,7 @@ a.postMore {
 }
 
 .reviewA {
-  color: black;
+  color: var(--color-appleblue);
 }
 
 #reviewText {
@@ -346,4 +347,4 @@ a.postMore {
 
 .reviewHr {
   border-top: 1px solid gray;
-}
+} */
