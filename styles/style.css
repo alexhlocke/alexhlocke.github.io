@@ -307,3 +307,21 @@ a.postMore {
 .italic {
   font-style: italic;
 }
+
+#reviewIconDiv {
+  display: flex;
+  width: 100%;
+}
+
+#reviewIcon {
+  width: 30%;
+}
+
+#reviewLabel {
+  width: 50%;
+}
+
+#reviewText {
+  height: 70vh;
+  width: 90vh;
+}
