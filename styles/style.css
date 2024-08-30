@@ -277,9 +277,11 @@ a.postMore {
 }
 
 .award {
-  color: var(--color-red);
+  /* color: var(--color-red); */
+  color: gold;
   font-style: italic;
-  border-color: var(--color-red);
+  /* border-color: var(--color-red); */
+  border-color: gold;
 }
 
 .grow {
